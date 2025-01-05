@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select a Subject</title>
+  <style>
+    .subject-card {
+      width: 250px;
+      margin: 20px;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .subject-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .subject-card h3 {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2 style=text-align:center>Select a Subject</h2>
+  <div class="subject-card" onclick="startQuiz('math')">
+    <img src="https://i.pinimg.com/736x/ac/c9/7c/acc97c4f6ba2fc68266b7e687511abca.jpg" alt="Math">
+    <h3>Math</h3>
+    <p>Test your knowledge in Mathematics!</p>
+  </div>
+
+  <div class="subject-card" onclick="startQuiz('science')">
+    <img src="https://img.freepik.com/free-vector/hand-drawn-science-education-background_23-2148499325.jpg" alt="Science">
+    <h3>Science</h3>
+    <p>Explore the world of Science!</p>
+  </div>
+
+  <div class="subject-card" onclick="startQuiz('history')">
+    <img src="https://www.euroschoolindia.com/wp-content/uploads/2023/07/how-to-learn-history.jpg" alt="History">
+    <h3>History</h3>
+    <p>How well do you know history?</p>
+  </div>
+
+  <div class="subject-card" onclick="startQuiz('java')">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-L6ekXgXU4ZeQVU5oBiYmhBOZVeTGnH4Z_w&s" alt="JAVA">
+    <h3>JAVA</h3>
+    <p>How well do you know java?</p>
+  </div>
+
+  <div class="subject-card" onclick="startQuiz('sql')">
+    <img src="https://www.seedinfotech.com/wp-content/uploads/2022/11/SQL.jpg" alt="SQL">
+    <h3>SQL</h3>
+    <p>How well do you know sql?</p>
+  </div>
+
+  <div class="subject-card" onclick="startQuiz('cpp')">
+    <img src="https://miro.medium.com/v2/resize:fit:1400/0*ZpjhBs0gR5oSd3Il" alt="cpp">
+    <h3>C++</h3>
+    <p>How  do you do your C++?</p>
+  </div>
+
+  <div class="subject-card" onclick="startQuiz('python')">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA58mH1EAjc2uEChw2pMg-Lkm9iUhR1U6Fbw&s" alt="python">
+    <h3>python</h3>
+    <p>Are you good at  python?</p>
+  </div>
+
+  <div class="subject-card" onclick="startQuiz('dbms')">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Zw_3QaVw81_1aoXY5Kuk2-9r7CX6MeEHRg&s" alt="dbms">
+    <h3>dbms</h3>
+    <p>How well do you know dbms?</p>
+  </div>
+
+  <script>
+    function startQuiz(subject) {
+      window.location.href = subject + '-quiz.html';  // Redirect to the selected quiz page
+    }
+  </script>
+</body>
+</html>
